@@ -8,3 +8,24 @@ management.endpoint.health.show-details=ALWAYS
 management.endpoints.web.exposure.include=*
 management.endpoint.shutdown.enabled=true
 eureka.client.should-unregister-on-shutdown=true
+
+
+spring.datasource.url=jdbc:h2:mem:javatpoint
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+#enabling the H2 console
+spring.h2.console.enabled=true
+DB_CLOSE_DELAY=-1
+
+#below are used to see the tables creation queries and all 
+spring.jpa.show-sql=true 
+spring.jpa.properties.hibernate.format_sql=true
+
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+
+#persist the data
+#spring.datasource.url=jdbc:h2:file:/data/sampledata
+#spring.datasource.url=jdbc:h2:C:/data/sampledata
